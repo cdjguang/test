@@ -5,6 +5,7 @@ var halfNum;
 var arr = [];
 
 function Init(){
+    arr = []
     num = document.getElementsByClassName('testnum')[0].value;
     //思路：若要连续相加得到一个数，只有两种情况。
     // 1.奇数个，可整除且结果的1/2大于此奇数

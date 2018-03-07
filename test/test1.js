@@ -6,9 +6,9 @@ function secLenSameword(len){
     result = [];
     var s = document.getElementsByClassName('fir')[0].value;
     var t = document.getElementsByClassName('sec')[0].value;
-    //获得以单词长度为下标，长度相同单词放在同一数组的两个二维数组
+    //首先整理数据，获得以单词长度为下标，长度相同单词放在同一数组的两个二维数组
     var res = getNewArr(s,t);
-    sA = res[0];tA = res[1];
+    var sA = res[0];var tA = res[1];
     //在最短二维数组中倒序遍历，判断两个二维数组相同下标是否同时存在数据
     //遍历同时存在数据的较短数组，在用join(',')得到的较长数组字符串中寻找字符串匹配
     //注：由于寻找第二长度，故在下表最大的二维数组中只要寻找到一个匹配项即结束本次匹配
