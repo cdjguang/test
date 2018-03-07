@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <style>
+        .content{
+            height: 500px;
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+        }
+        .content p{
+            padding-left: 30px;
+        }
+        .content textarea{
+            border: 1px solid #cccccc;
+            display: block;
+            margin: 0 auto;
+            outline: none;
+        }
+        .content button{
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+        .result1{
+            height: 100px;
+            width: 300px;
+            overflow: auto;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 1px solid #cccccc;
+            text-align: center;
+            line-height: 100px;
+        }
+        .num{
+            height: 100px;
+            width: 770px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border: 1px solid #cccccc;
+            padding-left: 30px;
+        }
+        .num input{
+            font-size: 24px;
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            outline: none;
+        }
+        .num button{
+            padding: 5px 20px;
+            font-size: 24px;
+        }
+        .result2{
+            height: 300px;
+            width: 740px;
+            padding: 0 30px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border: 1px solid #cccccc;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <p>寻找第二长公共单词</p>
+        <p>第一段</p>
+        <textarea  class="fir" cols="120" rows="10" placeholder="请输入字母和空格的组合">This is C programming text</textarea>
+        <p>第二段</p>
+        <textarea  class="sec" cols="120" rows="10" placeholder="请输入子母和空格的组合">This is a text for programming</textarea>
+        <button onclick="secLenSameword(2)">寻找相同单词</button>
+    </div>
+    <div class="result1"></div>
+    <div class="num">
+        <p>输入数字</p>
+        <input class="testnum" type="number" min="1" max="10000" value="15">
+        <button onclick="Init()">查找</button>
+    </div>
+    <div class="result2">
+        <p>结果：</p>
+        <div class="res"></div>
+    </div>
+
+    <script src="test1.js"></script>
+    <script src="test2.js"></script>
+
+</body>
+</html>
